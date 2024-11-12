@@ -53,5 +53,4 @@ public class CandidateController {
                 .map(entry -> "Winner is: " + entry.getKey() + " with " + entry.getValue() + " votes.")
                 .orElse("No candidates available!");
     }
-//    First commit done!
 }
