@@ -1,0 +1,22 @@
+# Architecture and Design
+
+## Overview
+The application uses a layered architecture with a focus on simplicity and thread safety.
+
+## Components
+
+### Candidate
+Represents a candidate in the election with fields for `name` and `voteCount`.
+
+### CandidateService
+Provides core logic for managing candidates and their votes. The service stores candidates in a `ConcurrentHashMap` with `AtomicInteger` for thread-safe vote counting.
+
+### CandidateController
+Defines REST API endpoints for managing candidates, casting votes, retrieving vote counts, listing candidates, and finding the winner.
+
+## Concurrency
+- A `ConcurrentHashMap` is used to allow safe concurrent access to the candidate data.
+- `AtomicInteger` is used for each candidate's vote count to ensure thread-safe increment operations.
+
+## In-Memory Data Storage
+The `ConcurrentHashMap` holds candidate names and their vote counts, which allows for fast retrieval and updating.
