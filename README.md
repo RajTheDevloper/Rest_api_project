@@ -23,7 +23,7 @@ This project implements a REST API for a voting system using Java and Spring Boo
 1. Clone the repository.
 2. Open the project in an IDE (e.g., IntelliJ, Eclipse).
 3. Make sure to have Java and Maven installed.
-4. Run the application by executing the `DemoApplication` class.
+4. Run the application by executing the `VotingApplication` class.
 5. Use a tool like Postman or a browser to access the API endpoints.
 
 ## Features Implemented
