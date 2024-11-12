@@ -1,8 +1,7 @@
 package com.election_demo.voting.service;
 
-import com.election_demo.voting.model.Candidate;
-import org.springframework.stereotype.Service;
 
+import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
 import java.util.Map;
